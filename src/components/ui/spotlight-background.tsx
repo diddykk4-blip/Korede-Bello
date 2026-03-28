@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const SpotlightBackground = () => {
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
