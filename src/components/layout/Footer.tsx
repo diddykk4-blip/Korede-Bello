@@ -1,4 +1,11 @@
-import { Instagram, Twitter, Youtube, Music, Mail } from 'lucide-react';
+import { Instagram, Twitter, Youtube, Facebook, Mail } from 'lucide-react';
+
+const socialLinks = [
+  { Icon: Instagram, href: 'https://www.instagram.com/koredebello?igsh=MTgwNGxsenlrMWcydA==', label: 'Instagram' },
+  { Icon: Twitter, href: 'https://x.com/koredebello', label: 'Twitter' },
+  { Icon: Youtube, href: 'https://youtu.be/8HgulLsRuDw?si=G0UNDhNmK8v9-l6M', label: 'YouTube' },
+  { Icon: Facebook, href: 'https://www.facebook.com/share/17RDYJ22KG/?mibextid=wwXIfr', label: 'Facebook' },
+];
 
 export function Footer() {
   return (
@@ -13,8 +20,15 @@ export function Footer() {
               Official artist platform. Explore the music, live experiences, and creative universe.
             </p>
             <div className="flex space-x-6">
-              {[Instagram, Twitter, Youtube, Music].map((Icon, i) => (
-                <a key={i} href="#" className="text-primary/50 hover:text-accent-gold transition-colors">
+              {socialLinks.map(({ Icon, href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="text-primary/50 hover:text-accent-gold transition-colors"
+                >
                   <Icon size={20} />
                 </a>
               ))}
@@ -24,7 +38,7 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-widest text-accent-champagne mb-6">Explore</h3>
             <ul className="space-y-4">
-              {['Home', 'Music', 'Videos', 'Tour', 'Gallery'].map((item) => (
+              {['Home', 'Music', 'Videos', 'Tour', 'Gallery', 'Merch'].map((item) => (
                 <li key={item}>
                   <a href={`#${item.toLowerCase()}`} className="text-primary/70 hover:text-primary transition-colors font-light">
                     {item}

@@ -4,9 +4,9 @@ import { Hero } from './components/sections/Hero';
 import { FeaturedRelease } from './components/sections/FeaturedRelease';
 import { MusicLibrary } from './components/sections/MusicLibrary';
 import { Videos } from './components/sections/Videos';
-import { About } from './components/sections/About';
 import { Tour } from './components/sections/Tour';
 import { Gallery } from './components/sections/Gallery';
+import { Merch } from './components/sections/Merch';
 import { Contact } from './components/sections/Contact';
 
 function App() {
@@ -19,9 +19,9 @@ function App() {
         <FeaturedRelease />
         <MusicLibrary />
         <Videos />
-        <About />
         <Tour />
         <Gallery />
+        <Merch />
         <Contact />
       </main>
       

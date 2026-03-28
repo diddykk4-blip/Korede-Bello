@@ -1,53 +1,33 @@
 import { motion } from 'framer-motion';
 import { Play } from 'lucide-react';
+import SpotlightBackground from '../ui/spotlight-background';
 
 export function Hero() {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image / Parallax Container */}
+      {/* Background Image - Studio Shoot Theme */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-[#0a0a0a]"
+        className="absolute inset-0 z-0 bg-cover bg-no-repeat bg-black"
         style={{ 
-          backgroundImage: `url('https://images.unsplash.com/photo-1516280440502-6997b165b5d2?q=80&w=2600&auto=format&fit=crop')`,
-          backgroundPosition: '50% 30%'
+          backgroundImage: `url('/hero-bg.jpg')`,
+          backgroundPosition: 'center 40%' // adjusts focus slightly higher to the subject
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/20 mix-blend-multiply" />
+        {/* Dramatic Vignette / Studio Lighting */}
+        <div 
+          className="absolute inset-0 z-10"
+          style={{
+            background: 'radial-gradient(circle at 50% 50%, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,1) 85%, rgba(0,0,0,1) 100%)'
+          }}
+        />
+        {/* Overall Darkening Overlay */}
+        <div className="absolute inset-0 z-20 bg-black/30 mix-blend-multiply" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-center md:items-start text-center md:text-left mt-20">
-        
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="uppercase tracking-[0.3em] text-accent-champagne text-sm font-semibold mb-4"
-        >
-          Korede Bello
-        </motion.div>
-        
-        <motion.h1 
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-primary tracking-tight leading-tight mb-6"
-        >
-          Beauty, Bliss,<br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-gold to-accent-champagne">
-            Sound, Soul.
-          </span>
-        </motion.h1>
+      {/* Gold cursor spotlight effect */}
+      <SpotlightBackground />
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-primary/80 max-w-xl text-lg md:text-xl font-light mb-10"
-        >
-          An immersive journey into the heart of modern Afrobeats. 
-          Experience the art, the rhythm, and the stories behind the sound.
-        </motion.p>
-        
+      <div className="absolute inset-x-0 bottom-8 md:bottom-12 z-20 w-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-center md:items-start text-center md:text-left">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -60,7 +40,7 @@ export function Hero() {
             </span>
           </a>
           
-          <a href="#about" className="px-8 py-4 border border-primary/20 hover:border-accent-gold text-primary rounded-full font-medium uppercase tracking-widest text-sm transition-all hover:text-accent-gold glass-panel">
+          <a href="#tour" className="px-8 py-4 border border-primary/20 hover:border-accent-gold text-primary rounded-full font-medium uppercase tracking-widest text-sm transition-all hover:text-accent-gold glass-panel">
             Explore World
           </a>
         </motion.div>
@@ -71,7 +51,7 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        className="absolute bottom-40 md:bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
         <span className="text-[10px] uppercase tracking-[0.2em] text-primary/50">Scroll</span>
         <div className="w-[1px] h-12 bg-gradient-to-b from-primary/50 to-transparent" />
