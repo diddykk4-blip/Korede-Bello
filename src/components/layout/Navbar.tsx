@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Instagram, Twitter, Youtube, Facebook } from 'lucide-react';
+import { Menu, X, Instagram, Youtube, Facebook } from 'lucide-react';
+import { XIcon } from '../ui/XIcon';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navLinks = [
@@ -7,7 +8,6 @@ const navLinks = [
   { name: 'Music & Videos', href: '#music' },
   { name: 'Tour', href: '#tour' },
   { name: 'Gallery', href: '#gallery' },
-  { name: 'Merch', href: '#merch' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -44,9 +44,9 @@ export function Navbar() {
           
           <div className="hidden sm:flex items-center gap-4 border-l border-white/20 pl-4 sm:pl-6">
             <a href="https://www.instagram.com/koredebello?igsh=MTgwNGxsenlrMWcydA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-accent-gold hover:scale-110 transition-all"><Instagram size={20} /></a>
-            <a href="https://x.com/koredebello" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-accent-gold hover:scale-110 transition-all"><Twitter size={20} /></a>
-            <a href="https://youtu.be/8HgulLsRuDw?si=G0UNDhNmK8v9-l6M" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:text-accent-gold hover:scale-110 transition-all"><Youtube size={20} /></a>
             <a href="https://www.facebook.com/share/17RDYJ22KG/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-accent-gold hover:scale-110 transition-all"><Facebook size={20} /></a>
+            <a href="https://www.youtube.com/channel/UCVyLkguTbFz_u7aSE9jSXwQ" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:text-accent-gold hover:scale-110 transition-all"><Youtube size={20} /></a>
+            <a href="https://x.com/koredebello" target="_blank" rel="noopener noreferrer" aria-label="X" className="hover:text-accent-gold hover:scale-110 transition-all"><XIcon size={18} /></a>
           </div>
         </div>
 
@@ -115,9 +115,9 @@ export function Navbar() {
                 
                 <div className="flex items-center gap-6 text-primary mt-4">
                   <a href="https://www.instagram.com/koredebello?igsh=MTgwNGxsenlrMWcydA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-accent-gold transition-colors"><Instagram size={24} /></a>
-                  <a href="https://x.com/koredebello" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-accent-gold transition-colors"><Twitter size={24} /></a>
-                  <a href="https://youtu.be/8HgulLsRuDw?si=G0UNDhNmK8v9-l6M" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:text-accent-gold transition-colors"><Youtube size={24} /></a>
                   <a href="https://www.facebook.com/share/17RDYJ22KG/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-accent-gold transition-colors"><Facebook size={24} /></a>
+                  <a href="https://www.youtube.com/channel/UCVyLkguTbFz_u7aSE9jSXwQ" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:text-accent-gold transition-colors"><Youtube size={24} /></a>
+                  <a href="https://x.com/koredebello" target="_blank" rel="noopener noreferrer" aria-label="X" className="hover:text-accent-gold transition-colors"><XIcon size={20} /></a>
                 </div>
               </motion.div>
             </div>

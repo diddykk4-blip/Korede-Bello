@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 import { VideoModal } from '../ui/VideoModal';
 
 const tracks = [
-  { id: 1, title: 'Do Like That', year: '2016', cover: '/do-like-that.jpg', videoUrl: 'https://www.youtube.com/watch?v=hJBi780qFas' },
-  { id: 2, title: 'GodWin', year: '2015', cover: '/godwin.jpg', videoUrl: 'https://www.youtube.com/watch?v=w14zUTXOhYE' },
-  { id: 3, title: 'Mi Casa Su Casa', year: '2020', cover: '/mi-casa-su-casa.jpg', videoUrl: 'https://www.youtube.com/watch?v=dv1AClQrDeU' },
-  { id: 4, title: 'Bella', year: '2022', cover: '/bella.jpg', videoUrl: 'https://www.youtube.com/watch?v=nbTEb9sh7Gc' },
+  { id: 1, title: 'Not Romantic', year: '2024', cover: '/not-romantic.png', videoUrl: 'https://www.youtube.com/watch?v=AmZLxRy1ic8' },
+  { id: 2, title: 'Do Like That', year: '2016', cover: '/do-like-that.jpg', videoUrl: 'https://www.youtube.com/watch?v=hJBi780qFas' },
+  { id: 3, title: 'GodWin', year: '2015', cover: '/godwin.jpg', videoUrl: 'https://www.youtube.com/watch?v=w14zUTXOhYE' },
+  { id: 4, title: 'Mi Casa Su Casa', year: '2020', cover: '/mi-casa-su-casa.jpg', videoUrl: 'https://www.youtube.com/watch?v=dv1AClQrDeU' },
 ];
 
 export function MusicLibrary() {
