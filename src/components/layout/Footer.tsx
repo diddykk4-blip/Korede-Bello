@@ -57,11 +57,6 @@ export function Footer() {
                   <Mail size={16} /> Bookings
                 </a>
               </li>
-              <li>
-                <a href="#contact" className="text-primary/70 hover:text-primary transition-colors font-light flex items-center gap-2">
-                  <Mail size={16} /> Press
-                </a>
-              </li>
             </ul>
           </div>
         </div>

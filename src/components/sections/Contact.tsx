@@ -52,7 +52,7 @@ export function Contact() {
             className="flex flex-col justify-center gap-8"
           >
             <div>
-              <h2 className="text-4xl font-display font-bold text-primary mb-2">Bookings & Press</h2>
+              <h2 className="text-4xl font-display font-bold text-primary mb-2">Bookings</h2>
               <p className="text-primary/60 font-light mb-8 max-w-md">
                 For commercial inquiries, features, and event bookings worldwide.
               </p>
@@ -65,20 +65,8 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="text-sm uppercase tracking-widest text-primary/50 font-bold mb-1">Global Bookings</h4>
-                  <a href="mailto:bookings@koredebello.com" className="text-xl font-display text-primary hover:text-accent-gold transition-colors">
-                    bookings@koredebello.com
-                  </a>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-6 p-6 rounded-xl border border-white/5 bg-background/50 hover:border-white/10 transition-colors group">
-                <div className="w-12 h-12 rounded-full bg-surface flex items-center justify-center text-accent-champagne group-hover:scale-110 transition-transform">
-                  <Mail size={20} />
-                </div>
-                <div>
-                  <h4 className="text-sm uppercase tracking-widest text-primary/50 font-bold mb-1">Press & Media</h4>
-                  <a href="mailto:press@koredebello.com" className="text-xl font-display text-primary hover:text-accent-champagne transition-colors">
-                    press@koredebello.com
+                  <a href="mailto:koredebello@caspertainment.agency" className="text-xl font-display text-primary hover:text-accent-gold transition-colors block break-all">
+                    koredebello@caspertainment.agency
                   </a>
                 </div>
               </div>
