@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 export function XIcon({ size = 24, className = "" }: { size?: number, className?: string }) {
   return (
